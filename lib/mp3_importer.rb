@@ -10,7 +10,10 @@ class MP3Importer
   end
 
   def files()
-    import()
+    files = []
+    Dir.glob("**/*.mp3") do |filename|
+      files << filename
+    end
   end
 
   def import
