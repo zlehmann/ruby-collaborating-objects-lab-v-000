@@ -20,7 +20,7 @@ class MP3Importer
   def import
     files = []
     Dir.glob("**/*.mp3") do |filename|
-      files << filename.split("/")[-1]
+      new_song = Song.new_by_filename(filename.split("/")[-1])
     end
   end
 
