@@ -19,6 +19,7 @@ class Song
 
   def artist=(name)
     artist_obj = Artist.find_or_create_by_name(name)
+    self.artist = artist_obj
   end
 
   def artist(artist_name)
