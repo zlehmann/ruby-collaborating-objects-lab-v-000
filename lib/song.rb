@@ -15,7 +15,7 @@ class Song
   def title
     @title
   end
-  
+
   def artist
     @artist
   end
