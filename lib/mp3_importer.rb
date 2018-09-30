@@ -10,7 +10,7 @@ class MP3Importer
   end
 
   def import
-    files = Dir["#{path}*/.mp3"]
+    files = Dir["path*/.mp3"]
   end
 
 end
