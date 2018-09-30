@@ -29,11 +29,13 @@ class Artist
     @@all.each do |artist|
       if artist.name == name
         output = artist
-      else
-        output = Artist.new(name)
       end
     end
-    return output
+    if output == nil
+      return Artist.new(name)
+    else
+      return output
+    end
   end
 
   def print_songs
