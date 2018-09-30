@@ -12,6 +12,11 @@ class Artist
     @songs << name
   end
 
+
+  def songs
+    @songs
+  end
+
   def all
     @@all
   end
