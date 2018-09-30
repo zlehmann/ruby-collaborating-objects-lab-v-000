@@ -9,7 +9,7 @@ class Song
     name = filename.split(" - ")[1]
     artist = filename.split(" - ")[0]
     song = Song.new(name)
-    self.artist = artist
+    song.artist = artist
   end
 
   def name
@@ -17,10 +17,6 @@ class Song
   end
 
   def artist
-    @artist
-  end
-
-  def artist=(name)
     @artist
   end
 
