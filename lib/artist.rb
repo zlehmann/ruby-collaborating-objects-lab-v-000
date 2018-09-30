@@ -25,12 +25,15 @@ class Artist
   end
 
   def self.find_or_create_by_name(name)
+    output = nil
     @@all.each do |artist|
       if artist.name == name
-        return artist
+        output = artist
       else
-        new_artist = Artist.new(name)
+        output = Artist.new(name)
       end
     end
+    return output
   end
+
 end
