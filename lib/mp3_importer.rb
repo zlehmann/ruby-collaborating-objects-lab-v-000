@@ -9,7 +9,7 @@ class MP3Importer
     @path
   end
 
-  def files(path)
+  def files()
     import()
   end
 
